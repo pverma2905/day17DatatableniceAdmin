@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
-import { APP_BRAND, APP_NAME } from '../helper/helper'
+import { APP_BRAND, APP_NAME } from '.helper/helper'
 
 
 export default function Home() {
