@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
-import { APP_BRAND, APP_NAME } from '.helper/helper'
+import { APP_BRAND, APP_NAME } from '../helper/helper'
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
                   <div className="card mb-3">
                     <div className="card-body">
                       <div className="pt-4 pb-2">
-                        <h5 className="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                        <h5 className="card-title text-center pb-0 fs-4">Login</h5>
                         <p className="text-center small">Enter your username &amp; password to login</p>
                       </div>
                       <form className="row g-3 needs-validation" noValidate>
@@ -49,9 +49,9 @@ export default function Home() {
                         <div className="col-12">
                           <Link href="/admin/dashboard" className="btn btn-primary w-100" type="submit">Login</Link>
                         </div>
-                        <div className="col-12">
+                        {/* <div className="col-12">
                           <p className="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
-                        </div>
+                        </div> */}
                       </form>
                     </div>
                   </div>

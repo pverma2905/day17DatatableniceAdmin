@@ -1,10 +1,7 @@
-export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-            <body className={`${opensans.className} ${nunito.className} ${poppins.className}`}>
-                {children}
+const APP_NAME = 'COLARGE Ind'
+const APP_VERSION = '1.0.0'
+const APP_BRAND = 'COLARGE LIMITED'
 
-            </body>
-        </html>
-    )
+module.exports = {
+    APP_NAME, APP_VERSION, APP_BRAND
 }
