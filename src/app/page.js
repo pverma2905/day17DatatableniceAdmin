@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
-
+import { APP_BRAND, APP_NAME } from '../helper/helper'
 
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
                   <div className="d-flex justify-content-center py-4">
                     <a href="index.html" className="logo d-flex align-items-center w-auto">
                       <img src="assets/img/logo.png" alt="true" />
-                      <span className="d-none d-lg-block">NiceAdmin</span>
+                      <span className="d-none d-lg-block">{APP_NAME}</span>
                     </a>
                   </div>{/* End Logo */}
                   <div className="card mb-3">
@@ -57,7 +57,7 @@ export default function Home() {
                   </div>
                   <div className="credits">
 
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Designed by <a href="/">{APP_BRAND}</a>
                   </div>
                 </div>
               </div>
